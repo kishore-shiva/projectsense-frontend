@@ -1,0 +1,45 @@
+// Variables
+$primary-color: #FF2540;
+$background-gradient-start: #000000;
+$background-gradient-end: #FF2540;
+
+// Styles
+.dashboard-container {
+  background: linear-gradient(to right, $background-gradient-start, $background-gradient-end);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  overflow-y: auto;
+
+  div {
+
+    // Nested styles for better organization
+    .dashboard-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .dashboard-credit {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .sign-out-btn {
+      background-color: #fff;
+      color: $primary-color;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}

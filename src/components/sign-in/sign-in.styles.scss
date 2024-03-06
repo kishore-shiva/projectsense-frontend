@@ -1,0 +1,33 @@
+$primary-color: #000000;
+$secondary-color: #FF2540;
+$button-bg-color: #ffffff;
+$button-text-color: #000000;
+
+.sign-in-container {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+
+  & > div {
+    text-align: center;
+  }
+
+  & .sign-in-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  & .sign-in-btn {
+    background: $button-bg-color;
+    color: $button-text-color;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
